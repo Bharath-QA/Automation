@@ -1,0 +1,280 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-31T18:21:35.353Z",
+        "line": 3,
+        "name": "validate google seach working",
+        "description": "",
+        "id": "feature-to-test-google-search-functionality;validate-google-seach-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: The driver executable must exist: /src/test/resources/drivers/chromedriver\n\tat org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:289)\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:154)\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:37)\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:222)\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:405)\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:119)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:105)\n\tat StepDefinitions.GoogleSearchSteps.browser_is_open_and_user_is_on_google_search(GoogleSearchSteps.java:20)\n\tat ✽.browser is open and user is on google search(file:///Users/BharathG/eclipse-workspace/CucumberJava/src/test/resources/Features/GoogleSearch.feature:5)\n",
+              "duration": 47000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "browser is open and user is on google search",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.browser_is_open_and_user_is_on_google_search()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user enters text in search box",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_enters_text_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user clicks on search button",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_clicks_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user is navigated to search results",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_is_navigated_to_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google search functionality",
+    "description": "",
+    "id": "feature-to-test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 12,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-31T18:21:35.575Z",
+        "line": 15,
+        "name": "Check Login is successfull with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successfull-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enters username and password",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokescenario"
+          },
+          {
+            "name": "@smoketest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T18:21:35.624Z",
+        "line": 29,
+        "name": "Check user Login is successfull with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-user-login-is-successfull-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enters valid user1 and pass1",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_enters_valid_user1_and_pass1()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user navigated to the home page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokescenario"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-31T18:21:35.640Z",
+        "line": 30,
+        "name": "Check user Login is successfull with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-user-login-is-successfull-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enters valid user2 and pass2",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_enters_valid_user2_and_pass2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user navigated to the home page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.user_navigated_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smokescenario"
+          }
+        ]
+      }
+    ],
+    "name": "feature to test login functionality",
+    "description": "",
+    "id": "feature-to-test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": [
+      {
+        "name": "@smokescenario",
+        "type": "Tag",
+        "location": {
+          "line": 11,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
