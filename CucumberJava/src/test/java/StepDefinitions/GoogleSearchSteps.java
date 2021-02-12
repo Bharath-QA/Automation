@@ -15,7 +15,7 @@ public class GoogleSearchSteps {
 	@Given("browser is open and user is on google search")
 	public void browser_is_open_and_user_is_on_google_search() {
 		System.out.println("user open browser and navigates to google search");
-		System.setProperty("webdriver.chrome.driver","/Users/BharathG/eclipse-workspace/CucumberJava/src/test/resources/drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/Users/BharathG/Documents/Automation/CucumberJava/src/test/resources/drivers/chromedriver");
 
 		driver = new ChromeDriver();
 		driver.navigate().to("https://www.google.com/");

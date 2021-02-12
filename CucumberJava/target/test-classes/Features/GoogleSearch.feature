@@ -6,3 +6,4 @@ Feature: feature to test google search functionality
     When user enters text in search box
     And user clicks on search button
     Then user is navigated to search results
+	
