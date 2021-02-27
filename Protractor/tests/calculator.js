@@ -17,17 +17,15 @@ describe('demo calculator test', function () {
         browser.sleep(2000);
     });
 
-    // it('subscription test', function(){
-    //     element(by.model('first')).sendKeys('3');
-    //     element(by.model('second')).sendKeys('2');
-    //     let allOptions = element.all(by.options('value for (key, value) in operators'));
-    //     // expect(allOptions.first()).toEqual('1');
-    //     allOptions.fifth();
-    //     expect(allOptions.getText()).toEqual('1');
+    it('subscription test', function(){
+        element(by.model('first')).sendKeys('3');
+        element(by.cssContainingText('option', '-')).click();
+        element(by.model('second')).sendKeys('2');
+        var resl = element(by.css('[ng-click="doAddition()"]')).click();
+        // expect(resl.getText()).toBe('1');
+        browser.sleep(2000);
 
-    //     browser.sleep(2000);
-
-    // });
+    });
 
     // it('multiplication', function(){
 
