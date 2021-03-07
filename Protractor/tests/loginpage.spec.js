@@ -1,4 +1,4 @@
-// let loginPageElement = require('../pages/loginPage');
+let loginPageElement = require('../pages/loginPage');
 
 describe('A login page', function () {
 
