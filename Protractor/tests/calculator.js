@@ -22,6 +22,7 @@ describe('demo calculator test', function () {
         element(by.cssContainingText('option', '-')).click();
         element(by.model('second')).sendKeys('2');
         var resl = element(by.css('[ng-click="doAddition()"]')).click();
+        // var resl2 = element(by.XPath("SELECT[@ng-model='operator']/self::SELECT")).click();
         // expect(resl.getText()).toBe('1');
         browser.sleep(2000);
 
