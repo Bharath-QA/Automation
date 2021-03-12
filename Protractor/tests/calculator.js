@@ -28,9 +28,10 @@ describe('demo calculator test', function () {
 
     });
 
-    // it('multiplication', function(){
-
-
-    // })
+    //Counts total no. of rows created
+    it('total rows counts', function(){
+        homepage.enterFirstNumber('100');
+        homepage.secondNumber_input('200');
+    });
 
 });

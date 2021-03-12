@@ -16,13 +16,21 @@ exports.config = {
     'browserName': 'chrome'
   },
 
+  //For multi- browser instance
+  // multiCapabilities: [{
+  //   browserName: 'chrome'
+  // }, {
+  //   browserName: 'firefox'
+  // }],
+
   // Framework to use. Jasmine is recommended.
   framework: 'jasmine',
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  // specs: ["../tests/calculator.js"],
-  specs:["../tests/loginpage.spec.js"],
+  specs: ["../tests/calculator.js"],
+  // specs:["../tests/loginpage.spec.js"],
+  // specs: ['../tests/angularPage.js'],
 
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {

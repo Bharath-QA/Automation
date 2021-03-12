@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615510929990' stop='1615510932163'>
+    <name>free crm title</name>
+    <title>free crm title</title>
+    <test-cases>
+        <test-case start='1615510929990' status='passed' stop='1615510932163'>
+            <name>get title test</name>
+            <title>get title test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
