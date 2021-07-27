@@ -17,7 +17,7 @@ describe('demo calculator test', function () {
         browser.sleep(2000);
     });
 
-    it('subscription test', function(){
+    it('subscription test', function () {
         element(by.model('first')).sendKeys('3');
         element(by.cssContainingText('option', '-')).click();
         element(by.model('second')).sendKeys('2');
@@ -29,7 +29,7 @@ describe('demo calculator test', function () {
     });
 
     //Counts total no. of rows created
-    it('total rows counts', function(){
+    it('total rows counts', function () {
         homepage.enterFirstNumber('100');
         homepage.secondNumber_input('200');
     });
